@@ -26,10 +26,17 @@ const changeFunction = () => {
 btnAddToList.addEventListener('click', (e) => {
     let itemToList = itemInput.value;
     output.innerHTML += `
-    <p>Hej: ${itemToList} </p>
+    <p>Testvara ${itemToList} </p>
     `;
     nrOfListedItems++;
-    nrInList.innerHTML = `${nrOfListedItems} listade varor`;
+    if (nrOfListedItems > 1)
+    {
+        nrInList.innerHTML = `${nrOfListedItems} listade varor:`;
+    }
+    else
+    {
+        nrInList.innerHTML = `${nrOfListedItems} listad vara:`;
+    }
 })
 
 btnChangable.addEventListener('click', changeFunction);
@@ -44,6 +51,18 @@ output.addEventListener('click', (e) => {
             alertText.innerText = '-';
             funcText.innerText = 'Klick raderar vara från listan';
             nrOfListedItems--;
+            if (nrOfListedItems > 1)
+            {
+                nrInList.innerHTML = `${nrOfListedItems} listade varor:`;
+            }
+            else if (nrOfListedItems == 1)
+            {
+                nrInList.innerHTML = `${nrOfListedItems} listad vara:`;
+            }
+            else
+            {
+                nrInList.innerHTML = `Inga varor i listan`;
+            }    
         }
         else
         {

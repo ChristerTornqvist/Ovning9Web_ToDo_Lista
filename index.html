@@ -10,25 +10,35 @@
     </head>
     <body>
         <article>
-            <header><!--Header-->Header</header>
+            <header>
+                <h1>Inköpslista</h1>
+            </header>
+
+            <div id="instructions">
+                <P>Skriv in varor som skall inhadlas i input-fältet och klicka på "Lägg till i listan".</P>
+                <p>Välj med knappen "Ändra klickfunktion", sedan kan du klicka på listade varor för att radera, stryka över dem eller ta bort överstrykning.</p>
+            </div>
             
-            <div>
+            <div id="inputArea">
                 <form id="inputForm">
-                    <input type="string" id="itemInput" placeholder="Skriv in en vara" >
+                    <input type="string" id="itemInput" class="form-control" placeholder="Skriv in en vara" >
                 </form>
-                <button id="btnAddToList">Lägg till i listan</button>
+                <button id="btnAddToList" class="btn btn-dark">Lägg till i listan</button>
                 <div id="alertText">-</div>
                 <div id="funcText">Klick raderar vara från listan</div>
+                <button id="btnChangable" class="btn btn-dark">Ändra klickfunktion</button>
             </div>
-
-            <button id="btnChangable">Ändra klickfunktion</button>
+            
             
             <div>
-                <h3 id="nrInList">Tom lista</h3>
+                <h5 id="nrInList">Tom lista:</h5>
                 <div id="output"></div>
             </div>
             
-            <footer><!--Footer-->Footer</footer>
+            <footer>
+                <!--Ändra datum innan inlämning!-->
+                <p>&copy; 2022-12-11<br>Christer Törnqvist</p>
+            </footer>
         </article>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
