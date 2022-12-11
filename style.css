@@ -1,0 +1,11 @@
+#output {
+    margin-top: 1rem;
+    background-color: beige;
+    width: 300px;
+}
+
+.line{
+    text-decoration: line-through;
+    text-decoration-style: double;
+    background-color: bisque;
+}
