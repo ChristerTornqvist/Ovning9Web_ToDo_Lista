@@ -26,8 +26,8 @@ const changeFunction = () => {
 btnAddToList.addEventListener('click', (e) => {
     let itemToList = itemInput.value;
     output.innerHTML += `
-    <p>Testvara ${itemToList} </p>
-    `;
+    <p>Testvara ${itemToList} </p> 
+    `; // ---- Ta bort "Testvara" ----
     nrOfListedItems++;
     if (nrOfListedItems > 1)
     {
@@ -48,7 +48,7 @@ output.addEventListener('click', (e) => {
         {
             console.log(e.target);
             e.target.remove();
-            alertText.innerText = '-';
+            alertText.innerText = ' ';
             funcText.innerText = 'Klick raderar vara från listan';
             nrOfListedItems--;
             if (nrOfListedItems > 1)
@@ -68,7 +68,7 @@ output.addEventListener('click', (e) => {
         {
             console.log(e.target);
             e.target.classList.toggle('line')
-            alertText.innerText = '-';
+            alertText.innerText = ' ';
             funcText.innerText = 'Klick ändrar överstrykning i listan';
         }
     }

@@ -11,16 +11,18 @@ h5 {
 
 #instructions {
     font-size: larger;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 body {
-    background-image: url('/images/paper003.jpg');
+    background-image: url('images/paper003.jpg');
     background-size: cover;
     color: black;
 }
 
 #inputArea {
-    background-image: url('/images/paper002.jpg');
+    background-image: url('images/paper002.jpg');
     background-size: cover;
     color: black;
 }
@@ -32,6 +34,7 @@ body {
 }
 
 #alertText {
+    min-height: 24px;
     color: crimson;
     font-weight: bolder;
     text-decoration: underline;
@@ -61,7 +64,7 @@ body {
 footer {
     height: 70px;
     margin-top: 70px;
-    background-image: url('/images/paper002.jpg');
+    background-image: url('images/paper002.jpg');
     background-size: cover;
     color: black;
 }
