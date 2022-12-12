@@ -7,7 +7,6 @@ const alertText = document.querySelector('#alertText');
 const funcText = document.querySelector('#funcText');
 
 let nrOfListedItems = 0;
-
 let eraseValue = true;
 
 const changeFunction = () => {
@@ -26,8 +25,8 @@ const changeFunction = () => {
 btnAddToList.addEventListener('click', (e) => {
     let itemToList = itemInput.value;
     output.innerHTML += `
-    <p>Testvara ${itemToList} </p> 
-    `; // ---- Ta bort "Testvara" ----
+    <p>${itemToList}</p> 
+    `;
     nrOfListedItems++;
     if (nrOfListedItems > 1)
     {
